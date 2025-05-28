@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: cursive;
+	vertical-align: baseline;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes psicodelia{
+    0%{background-color: #efa8e0;}
+    5%{background-color: #ffffff;}
+    10%{background-color: #C7B446;}
+    15%{background-color: #F80000;}
+    20%{background-color: #25a811;}
+    25%{background-color: #a631c1;}
+    30%{background-color: #b320a4;}
+    35%{background-color: #e7b9b9;}
+    40%{background-color: #9bf8bb;}
+    45%{background-color: #cd640e;}
+    50%{background-color: #000000;}
+    55%{background-color: #16ae9f;}
+    60%{background-color: #effff9;}
+    65%{background-color: #48a25d;}
+    70%{background-color: #96a56e;}
+    75%{background-color: #accf1f;}
+    80%{background-color: #eddd8a;}
+    85%{background-color: #6c0946;}
+    90%{background-color: #86cdf6;}
+    95%{background-color: #574d38;}
+    100%{background-color: #bc8226;}
+}
+
+.bounce {
+    position:fixed;
+    left:50%;
+    bottom:0;
+    margin-top:-25px;
+    margin-left:-25px;
+    height:50px;
+    width:50px;
+    background:red;
+    animation:bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%       { bottom:5px; }
+    25%, 75% { bottom:15px; }
+    50%      { bottom:20px; }
+    100%     {bottom:0;}
+}
+
+@keyframes rotate{
+    0%{transform: rotate(36deg) translateX(0%) translateY(100%)}
+    10%{transform: rotate(72deg) translateX(10%) translateY(90%)}
+    20%{transform: rotate(108deg) translateX(20%) translateY(80%)}
+    30%{transform: rotate(144deg) translateX(30%) translateY(70%)}
+    40%{transform: rotate(180deg) translateX(40%) translateY(60%)}
+    50%{transform: rotate(216deg) translateX(50%) translateY(50%)}
+    60%{transform: rotate(252deg) translateX(60%) translateY(40%)}
+    70%{transform: rotate(288deg) translateX(70%) translateY(30%)}
+    80%{transform: rotate(324deg) translateX(80%) translateY(20%)}
+    90%{transform: rotate(360deg) translateX(90%) translateY(10%)}
+    100%{transform: rotate(396deg) translateX(100%) translateY(0%)}
+}
+@keyframes rotatee{
+    0%{transform: rotate(36deg) translateX(100%) translateY(0%)}
+    10%{transform: rotate(72deg) translateX(90%) translateY(10%)}
+    20%{transform: rotate(108deg) translateX(80%) translateY(20%)}
+    30%{transform: rotate(144deg) translateX(70%) translateY(30%)}
+    40%{transform: rotate(180deg) translateX(60%) translateY(40%)}
+    50%{transform: rotate(216deg) translateX(50%) translateY(50%)}
+    60%{transform: rotate(252deg) translateX(40%) translateY(60%)}
+    70%{transform: rotate(288deg) translateX(30%) translateY(70%)}
+    80%{transform: rotate(324deg) translateX(20%) translateY(80%)}
+    90%{transform: rotate(360deg) translateX(10%) translateY(90%)}
+    100%{transform: rotate(396deg) translateX(0%) translateY(100%)}
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.01);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(3);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.01);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+body{
+    animation: psicodelia 10s linear infinite;
+}
+img{
+    display: flex;
+    position: absolute;
+    max-width: 70px;
+}
+.nyan{
+    left: 20%;
+    top: 20%;
+    animation: rotate 1.5s linear infinite;
+}
+.banana{
+    right: 20%;
+    bottom: 20%;
+    animation: rotatee 1.5s linear infinite;
+}
+button{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    animation: pulse 0.8s linear infinite;
+}
